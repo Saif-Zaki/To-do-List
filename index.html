@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+
+<body>
+    <main class="container" style="direction: rtl;">
+        <section class="hero-container">
+
+            <article class="banner-container"  style="padding-bottom: 10px;">
+                <div class="header-container">
+                    <div class="header-wrapper" style="height: fit-content;">
+                        <h1 style="display: inline; ">مهامي</h1>
+                        <button class=" circular add-btn" style="float: right;" id="add-btn"><i
+                                class="fa-solid fa-plus"></i></button>
+                    </div>
+
+                </div>
+                <!-- TASKS -->
+                <div class="tasks" id="tasks">
+                    <!-- TASK -->
+                    <div class="task">
+                        <div class="task-info">
+                            <h2>فراءة كتاب</h2>
+                            <div>
+                                <i class="fa-solid fa-calendar"></i><span>10/10/2026</span>
+                            </div>
+                        </div>
+                        <div class="task-action">
+                            <button class="circular" style="background-color: #690000;"><i
+                                    class="fa-solid fa-trash"></i></button>
+                            <button class="circular" style="background-color: #008B16;">
+                                <i class="fa-solid fa-check"></i>
+                            </button>
+                            <button class="circular" style="background-color: #4E59D8;">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--// TASK //-->
+
+                    <!-- TASK -->
+                    <div class="task">
+                        <div class="task-info">
+                            <h2>فراءة كتاب</h2>
+                            <div>
+                                <span>10/10/2026</span>
+                            </div>
+                        </div>
+                        <div class="task-action">
+                            <button class="circular" style="background-color: #690000;"><i
+                                    class="fa-solid fa-trash"></i></button>
+                            <button class="circular" style="background-color: #008B16;">
+                                <i class="fa-solid fa-check"></i>
+                            </button>
+                            <button class="circular" style="background-color: #4E59D8;">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--// TASK //-->
+                </div>
+                <!--// TASKS //-->
+            </article>
+
+        </section>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

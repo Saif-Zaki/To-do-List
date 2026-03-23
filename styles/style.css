@@ -1,0 +1,122 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Tajawal", sans-serif;
+    }
+
+    .container {
+        /* background-color: #1B0044; */
+        background-color: #0d7347;
+        min-height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-container {
+        width: 70%;
+        /* background-color: white; */
+        transition: all 1s;
+    }
+    
+    .banner-container {
+        margin-top: 100px;
+        background-color: #eee;
+        border-radius: 20px 20px 0 0;
+        min-height: 1px;
+        /* transition: all 3s; */
+    }
+    
+    .header-container {
+        border-radius: 20px 20px 0 0;
+        text-align: center;
+        /* font-size: 30px; */
+        color: white;
+        /* line-height: 120px; */
+        width: 100%;
+        background-color: #13a868;
+    }
+    
+    .header-wrapper {
+        padding: 5px;
+    }
+    
+    button.circular {
+        width: 37px;
+        height: 37px;
+        /* padding: 5px; */
+        border-radius: 50%;
+        
+    }
+    
+    .add-btn {
+        background-color: #05483d;
+        font-size: 18px;
+    }
+    
+    button {
+        border: 0;
+        font-size: 20px;
+        line-height: 37px;
+    }
+    
+    .material-symbols-outlined {
+        line-height: 37px;
+    }
+    
+    .material-symbols-rounded {
+        line-height: 37px;
+    }
+    
+    .task:hover {
+        box-shadow: 0px 3px 15px rgb(91, 97, 97, 0.843);
+    }
+    
+    .task {
+        transition: box-shadow 0.2s;
+        border-bottom: solid 1px black;
+        display: flex; margin: 20px; padding: 5px; background-color: white;
+        transition: all 0.4s ease;
+        
+    }
+    
+    .success-green{
+        background-color: #98e6c4;
+    }
+    .faild-white{
+        background-color: white;
+    }
+    .fa-solid {
+        color: #eee;
+    }
+    .fa-calendar{
+        color: black;
+        margin: 5px;
+    }
+    .task-info{
+        width: 70%;
+    }
+    .task-action{
+        width: 25%; display: flex; justify-content: space-between; align-items: center;padding: 10px;
+    }
+    .removing{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    /* to make the button fixed at the bottom left of the page on mobile */
+    @media ((width < 1024px) and (width > 180px))  {
+        .task{
+            display: block;
+        }
+        .task-info{
+            width: 100%;
+            text-align: center;
+        }
+        .task-action{
+            width: 100%;
+            text-align: center;
+        }
+
+    }
